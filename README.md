@@ -1,6 +1,6 @@
 # Resty-Burp
 A REST/JSON API to the Burp Suite security tool.
-
+- Adding JAR creation
 
 ## Requires
 - Maven 2
