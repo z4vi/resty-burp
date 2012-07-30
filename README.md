@@ -1,6 +1,7 @@
 # Resty-Burp
 A REST/JSON API to the Burp Suite security tool.
 
+
 ## Requires
 - Maven 2
 - Licensed version of Burp Suite Pro from: http://portswigger.net/burp/
@@ -8,7 +9,7 @@ A REST/JSON API to the Burp Suite security tool.
 ## Install
 Install Burp Suite pro into the local maven repo:
 
-	mvn install:install-file -Dfile=burpsuite-pro.jar -DgroupId=net.portswigger -DartifactId=burpsuite-pro -Dversion=1.4.04 -Dpackaging=jar
+	mvn install:install-file -Dfile=burpsuite-pro.jar -DgroupId=net.portswigger -DartifactId=burpsuite-pro -Dversion=1.4.07 -Dpackaging=jar
 
 Then compile:
 
@@ -23,6 +24,16 @@ Everytime the reset() method is called, the burp.blank.state state is loaded- so
 Before running for the first time, compile with:
 
 	mvn exec:java
+
+## Create Jar
+Assembly plugin can create distribution in JAR format with the following command:
+
+	mvn assembly:assembly
+
+Then, you can run the .JAR with Burp Pro and Resty Burp : 
+	
+	java -Xmx1g -jar target/resty-burp-0.3-jar-with-dependencies.jar 
+
 
 ## Usage
 It ships with a client written in Java which can be used from other Java programs.
