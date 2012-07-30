@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import net.continuumsecurity.burpclient.ScanPolicy;
+import net.continuumsecurity.restyburp.ScanPolicy;
 import net.continuumsecurity.restyburp.ScanQueueMap;
 import net.continuumsecurity.restyburp.Utils;
 import net.continuumsecurity.restyburp.model.ScanIssueBean;

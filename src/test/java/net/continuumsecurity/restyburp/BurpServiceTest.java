@@ -22,7 +22,7 @@
  */
 package net.continuumsecurity.restyburp;
 
-import net.continuumsecurity.burpclient.ScanPolicy;
+import net.continuumsecurity.restyburp.ScanPolicy;
 import net.continuumsecurity.restyburp.model.ScanIssueBean;
 
 import org.apache.log4j.Logger;
